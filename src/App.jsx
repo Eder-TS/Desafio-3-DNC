@@ -1,3 +1,4 @@
+import NavBar from './components/NavBar'
 import './App.css'
 
 function App() {
@@ -6,6 +7,8 @@ function App() {
   return (
     <>
       <div>
+        {/*usar react-icons*/ }
+        <NavBar/>
 
       </div>
     </>

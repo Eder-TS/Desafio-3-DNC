@@ -1,0 +1,9 @@
+.navbar div{
+    background-color: blue;
+
+    width: 400px;
+}
+
+.navbar a{
+    color: aliceblue;
+}
