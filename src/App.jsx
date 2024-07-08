@@ -1,16 +1,13 @@
 import NavBar from './components/NavBar'
+import { Presentation } from './components/Presentation'
 import './App.css'
 
+
 function App() {
-
-
   return (
     <>
-      <div>
-        {/*usar react-icons*/ }
-        <NavBar/>
-
-      </div>
+      <NavBar/>
+      <Presentation/>
     </>
   )
 }
