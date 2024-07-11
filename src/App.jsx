@@ -1,8 +1,8 @@
 import NavBar from './components/NavBar'
-import { Presentation } from './components/Presentation'
+import Presentation from './components/Presentation'
 import Card from './components/elements/Card'
 import './App.css'
-import products from './components/Projects/projects.js'
+import projects from './components/Projects/projects.js'
 
 function App() {
   return (
@@ -10,12 +10,12 @@ function App() {
       <NavBar/>
       <Presentation/>
       <Card
-        site= {products.site}
-        src= {products.src}
-        alt= {products.alt}
-        title= {products.title}
-        description= {products.description}
-        repo= {products.repo}
+        site= {projects[0].site}
+        src= {projects[0].src}
+        alt= {projects[0].alt}
+        title= {projects[0].title}
+        description= {projects[0].description}
+        repo= {projects[0].repo}
       />
     </>
   )

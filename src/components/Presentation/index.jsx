@@ -1,6 +1,6 @@
 import style from './Presentation.module.css'
 
-export function Presentation(){
+function Presentation(){
     return(
         <section className={style.presentation}>
             <h1>Eder TS - Desenvolvedor Full Stack</h1>
@@ -15,3 +15,5 @@ export function Presentation(){
         </section>
     )
 }
+
+export default Presentation
