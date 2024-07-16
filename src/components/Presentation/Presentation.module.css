@@ -5,13 +5,13 @@
     margin-left: 15%;
 }
 
-p{
+.text{
     font-size: 30px;
     color: #BCBCBC;
 
     margin-left: 55px;
 }
 
-button{
+.button{
     margin-left: 100px;
 }

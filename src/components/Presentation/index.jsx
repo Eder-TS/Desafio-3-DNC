@@ -1,17 +1,17 @@
-import style from './Presentation.module.css'
+import styles from './Presentation.module.css'
 
 function Presentation(){
     return(
-        <section className={style.presentation}>
+        <section className={styles.presentation}>
             <h1>Eder TS - Desenvolvedor Full Stack</h1>
 
-            <p>
+            <p className={styles.text}>
                 Antenado as mais novas tecnologias para trazer as<br/>
                 melhores soluções às suas demandas de sistemas, seja<br/>
                 uma simples página de apresentação ou e-commerce completo.
             </p>
 
-            <button>botão</button>
+            <button className={styles.button}>botão</button>
         </section>
     )
 }
