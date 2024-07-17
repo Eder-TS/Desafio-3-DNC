@@ -1,6 +1,7 @@
+import Button from '../elements/Button'
 import styles from './Presentation.module.css'
 
-function Presentation(){
+export default function Presentation(){
     return(
         <section className={styles.presentation}>
             <h1>Eder TS - Desenvolvedor Full Stack</h1>
@@ -11,9 +12,7 @@ function Presentation(){
                 uma simples página de apresentação ou e-commerce completo.
             </p>
 
-            <button className={styles.button}>botão</button>
+            <Button href="https://www.linkedin.com/in/eder-ts/details/certifications/" text="Meus certificados" />
         </section>
     )
 }
-
-export default Presentation

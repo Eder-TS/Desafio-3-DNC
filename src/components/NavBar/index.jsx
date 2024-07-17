@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import styles from './NavBar.module.css'
 
-function NavBar(){
+export default function NavBar(){
     return(
         <nav className={styles.navbar}>
             <ul className={styles.internalLinks}>
@@ -27,5 +27,3 @@ function NavBar(){
         
     )
 }
-
-export default NavBar

@@ -1,6 +1,7 @@
+import Button from '../Button'
 import styles from './Card.module.css'
 
-function Card({site, src, alt, title, description, repo}){
+export default function Card({site, src, alt, title, description, repo}){
     return(
         <article className={styles.card}>
             <a href={site}>
@@ -11,9 +12,7 @@ function Card({site, src, alt, title, description, repo}){
 
             <p className={styles.text}>{description}</p>
 
-            <button className={styles.button}> <a href={repo}>Repositório do projeto</a></button>
+            <Button href={repo} text="Repositório do projeto"/>
         </article>
     )
 }
-
-export default Card

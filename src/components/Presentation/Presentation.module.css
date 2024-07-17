@@ -12,6 +12,10 @@
     margin-left: 55px;
 }
 
-.button{
+section div{
     margin-left: 100px;
+}
+
+section div button{
+    font-size: 28px;
 }
