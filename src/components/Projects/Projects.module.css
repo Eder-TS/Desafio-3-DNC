@@ -1,0 +1,10 @@
+.projects{
+    text-align: left;
+
+    margin-left: 10%;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

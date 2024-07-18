@@ -1,6 +1,6 @@
 .card{
-    width: 510px;
-    height: 700px;
+    width: 350px;
+    height: 500px;
 
     border-radius: 50px 0;
     border: none;
@@ -21,7 +21,7 @@ img{
 }
 
 .title{
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 600;
 
     margin-top: 20px;
@@ -29,7 +29,7 @@ img{
     text-align: center;
 }
 .text{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
 }
 
