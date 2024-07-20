@@ -4,7 +4,7 @@ import styles from './Presentation.module.css'
 export default function Presentation(){
     return(
         <section className={styles.presentation}>
-            <h1>Eder TS - Desenvolvedor Full Stack</h1>
+            <h1>{/*Eder TS - Desenvolvedor Full Stack*/}Título</h1>
 
             <p className={styles.text}>
                 Antenado as mais novas tecnologias para trazer as<br/>

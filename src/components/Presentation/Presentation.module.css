@@ -1,21 +1,22 @@
 .presentation{
+    
     text-align: left;
 
-    margin-top: 100px;
-    margin-left: 15%;
+    margin: 100px 100px 35px 100px;
 }
+.presentation h1{
+    margin: 0 0 0 50px;
+}
+
 
 .text{
     font-size: 30px;
     color: #BCBCBC;
 
-    margin-left: 55px;
+    margin: 50px 0 50px 100px;
 }
 
-section div{
-    margin-left: 100px;
-}
-
-section div button{
+.presentation div button{
     font-size: 28px;
+    margin: 0 0 0 150px;
 }

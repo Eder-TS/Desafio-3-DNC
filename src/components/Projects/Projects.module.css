@@ -1,10 +1,15 @@
 .projects{
     text-align: left;
 
-    margin-left: 10%;
+    margin: 100px;
+}
+
+.projects h1{
+    margin: 0 0 0 50px;
 }
 
 .cards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
