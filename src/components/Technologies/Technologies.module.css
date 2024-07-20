@@ -1,0 +1,25 @@
+.technologies{
+    margin: 30px 100px;
+}
+.technologies h1{
+    text-align: left;
+    margin: 0 0 0 50px;
+}
+
+.technologies svg{
+    margin: 20px;
+
+    border: solid 3px rgb(109, 49, 188);
+    border-radius: 12px;
+
+    transition-duration: 0.5s;
+}
+
+.technologies svg:hover{
+    color: yellow;
+    border: solid 6px yellow;
+
+    transform: translateY(-10px);
+
+    transition-duration: 0.5s;
+}

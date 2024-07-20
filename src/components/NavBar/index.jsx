@@ -1,12 +1,19 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { useState } from "react"
 import styles from './NavBar.module.css'
 
 export default function NavBar(){
+
+    const [display, setDisplay] = useState('none');
+    function DisplaySection(){
+        setDisplay(document.getElementById("technologies").style.display = 'block')        
+    }
+
     return(
         <nav className={styles.navbar}>
             <ul className={styles.internalLinks}>
                 <li><a href="#projects">Projetos</a></li>
-                <li><a href="#tecnologies">Tecnologias</a></li>
+                <li><a href="#technologies" onClick={DisplaySection}>Tecnologias</a></li>
                 <li><a href="#aboutMe">Sobre mim</a></li>
             </ul>
 
