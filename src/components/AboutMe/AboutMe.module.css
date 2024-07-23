@@ -1,24 +1,46 @@
-.timeline{
+.aboutme{
+    margin: 0 100px;
+}
+
+.aboutme h1{
+    text-align: left;
+    margin: 0px 0px 25px 50px;
+}
+
+.timelinewraper{
     position: relative;
+    width: 85%;
+    height: 280px;
+    
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin: auto;
 }
 
 .linearea{
-    background-color: white;
-    width: 75%;
-    height: 6px;
     position: absolute;
-    top: 65%;
+    top: 22%;
+
+    width: 79%;
 }
 
-.item::after{
-    content: '';
-    display: block;
-    margin: auto;
-    background-color: white;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
+.event{
+    width: 25%;
+    position: relative;
+    min-height: 400px;
+    float: right;
+}
+
+.date{
+    position: absolute;
+    top: 0;
+    left: 41%;
+}
+
+.boxcontent{
+    position: absolute;
+    top: 19%;
+
+    font-size: 22px;
+    font-weight: 600;
 }
