@@ -3,6 +3,7 @@ import Presentation from './components/Presentation'
 import Projects from './components/Projects'
 import Technologies from './components/Technologies'
 import AboutMe from './components/AboutMe'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Projects/>
       <Technologies/>
       <AboutMe/>
+      <Footer/>
     </>
   )
 }

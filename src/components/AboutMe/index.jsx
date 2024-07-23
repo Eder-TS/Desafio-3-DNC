@@ -3,11 +3,11 @@ import styles from './AboutMe.module.css'
 
 export default function AboutMe(){
     return(
-        <section className={styles.aboutme}>
+        <section className={styles.aboutme} id='aboutMe'>
             <h1>Sobre mim</h1>
 
             <div className={styles.timelinewraper}>
-                <div className={styles.linearea}><img src={timeline} alt="" /></div>
+                <div className={styles.linearea}><img src={timeline} alt="Linha do tempo" /></div>
 
                 <div className={styles.event}>
                     <div className={styles.date}>
