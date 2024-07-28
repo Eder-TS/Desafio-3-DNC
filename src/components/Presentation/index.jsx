@@ -1,42 +1,86 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '../elements/Button'
 import styles from './Presentation.module.css'
 
 export default function Presentation(){
-    const [text, setText] = useState('')
-    const toRotate = ['Eder TS!', 'Desenvolvedor Full Stack!']
-    const [loop, setLoop] = useState(0)
-    const [isDeleting, setIsDeleting] = useState(false)
-    const period = 170
-    const [delta, setDelta] = useState(100)
+    let title = 'Eder TS - Desenvolvedor Full Stack'
+    const [index, setIndex] = useState(0)
+    let letter = title.at(index)
+    const [textBefore, setTextBefore] = useState(' ')
+    const [textAfter, setTextAfter] = useState('der TS - Desenvolvedor Full Stack')
+    const [nextStep, setNextStep] = useState(0)
+    var span = window.document.createElement('span')
 
     useEffect(() => {
         let clock = setInterval(() => {
-            toType()
-        }, delta)
-        return() => {clearInterval(clock)}
-    }, [text])
+            if(index <= 32){
+                changeLetter(index)
+                toMount(letter)
+                toSlice(index)
+                setIndex(index + 1)
+            } else {
+                changeLetter(index)
+                toMount(letter)
+                toSlice(index)
+                setIndex(0)
+            }
+        } , 500)
+        return(() => clearInterval(clock))
+    },[nextStep])
 
-    const toType = () => {
-        let i = loop % toRotate.length
-        let fullText =  toRotate[i]
-        let updateText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
+    function changeLetter(index){
+        letter = title.at(index-1)
+    }
 
-        setText(updateText)
+    function toMount(letter){
+        let h1 = window.document.getElementById('title')
+        erase()
+ 
+        h1.append(textBefore)
+        h1.append(toColor(letter))
+        h1.append(textAfter)
+        setNextStep(nextStep + 1)
+    }
 
-        if(!isDeleting && updateText === fullText){
-            setIsDeleting(true)
-            setDelta(period)
-        } else if (isDeleting && updateText === ''){
-            setIsDeleting(false)
-            setDelta(period)
-            setLoop(loop + 1)
+    function erase(){
+        window.document.getElementById('title').innerHTML = ''
+    }
+
+    function toSlice(index){
+        const splited = title.split("")
+
+        if(index == 0){
+            setTextBefore(' ')
+        } else {
+            let before = splited.slice(0,index)
+            let stringBefore = before.toString().replace(/,/g,'')
+
+            setTextBefore(stringBefore)
+        }
+
+        if(index == 33){
+            setTextAfter(' ')
+        } else {
+            let after = splited.slice(index + 1)
+            let stringAfter = after.toString().replace(/,/g,'')
+
+            setTextAfter(stringAfter)
         }
     }
+
+    function toColor(letter){
+        span.innerHTML = letter
+        span.style.color = 'yellow'
+        span.style.fontSize = '80px'
+        span.style.textShadow = '0px 0px 50px yellow'
+
+        return span
+    }
+   
     return(
         <section className={styles.presentation}>
-            <h1>{text}</h1>
-
+            <h1 id='title'>{title}</h1>
+    
             <p className={styles.text}>
                 Atento as mais novas tecnologias para trazer as<br/>
                 melhores soluções às suas demandas de sistemas, seja<br/>
