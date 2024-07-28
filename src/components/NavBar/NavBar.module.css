@@ -30,3 +30,7 @@ li{
 .externalLinks{
     width: 10%;
 }
+
+.externalLinks svg:hover{
+    transform: translateY(-7px);
+}

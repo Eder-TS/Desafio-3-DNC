@@ -1,4 +1,4 @@
-import timeline from '../../../public/aboutme/timeline.svg'
+import timeline from '/aboutme/timeline.svg'
 import styles from './AboutMe.module.css'
 
 export default function AboutMe(){

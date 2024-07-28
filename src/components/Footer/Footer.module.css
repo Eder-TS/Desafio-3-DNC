@@ -31,3 +31,7 @@
 .externalLinks{
    width: 30%;
 }
+
+.externalLinks svg:hover{
+    transform: translateY(-7px);
+}
