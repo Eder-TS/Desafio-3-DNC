@@ -6,6 +6,11 @@
     margin: 0 0 25px 50px;
 }
 
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
 .technologies svg{
     margin: 20px;
 
@@ -22,4 +27,12 @@
     transform: translateY(-10px);
 
     transition-duration: 0.5s;
+}
+
+.block{
+    position: relative;
+}
+
+.description{
+    position: absolute;
 }

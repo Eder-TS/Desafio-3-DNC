@@ -5,7 +5,7 @@ import styles from './Presentation.module.css'
 export default function Presentation(){
     let title = 'Eder TS - Desenvolvedor Full Stack'
     const [index, setIndex] = useState(0)
-    let letter = title.at(index)
+    const [letter, setLetter] = useState(title.at(index))
     const [textBefore, setTextBefore] = useState(' ')
     const [textAfter, setTextAfter] = useState('der TS - Desenvolvedor Full Stack')
     const [nextStep, setNextStep] = useState(0)
@@ -14,23 +14,19 @@ export default function Presentation(){
     useEffect(() => {
         let clock = setInterval(() => {
             if(index <= 32){
-                changeLetter(index)
+                setLetter(title.at(index))
                 toMount(letter)
                 toSlice(index)
                 setIndex(index + 1)
             } else {
-                changeLetter(index)
+                setLetter(title.at(index))
                 toMount(letter)
                 toSlice(index)
                 setIndex(0)
             }
-        } , 500)
+        } , 400)
         return(() => clearInterval(clock))
     },[nextStep])
-
-    function changeLetter(index){
-        letter = title.at(index-1)
-    }
 
     function toMount(letter){
         let h1 = window.document.getElementById('title')
