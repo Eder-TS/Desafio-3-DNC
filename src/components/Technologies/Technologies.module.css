@@ -10,29 +10,3 @@
     display: flex;
     justify-content: space-between;
 }
-
-.technologies svg{
-    margin: 20px;
-
-    border: solid 3px rgb(109, 49, 188);
-    border-radius: 12px;
-
-    transition-duration: 0.5s;
-}
-
-.technologies svg:hover{
-    color: yellow;
-    border: solid 6px yellow;
-
-    transform: translateY(-10px);
-
-    transition-duration: 0.5s;
-}
-
-.block{
-    position: relative;
-}
-
-.description{
-    position: absolute;
-}
