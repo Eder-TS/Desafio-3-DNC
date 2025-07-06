@@ -13,7 +13,7 @@ export default function Footer(){
 
                 <div>
                     <p>Email:</p>
-                    <p>steder20@yahoo.com.br</p>
+                    <p>stederwork@gmail.com</p>
                 </div>
             </div>
 

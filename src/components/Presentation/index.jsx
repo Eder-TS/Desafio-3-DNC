@@ -83,7 +83,7 @@ export default function Presentation(){
                 uma simples página de apresentação ou e-commerce completo.
             </p>
 
-            <Button href="https://www.linkedin.com/in/eder-ts/details/certifications/" text="Meus certificados" />
+            <Button href="https://www.linkedin.com/in/eder-ts/details/certifications/?_l=en_US" text="Meus certificados" />
         </section>
     )
 }
