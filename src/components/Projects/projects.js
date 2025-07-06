@@ -1,6 +1,15 @@
 const projects = [
     {
         id: 0,
+        site: 'https://https://template-landing-page-tan.vercel.app/',
+        src: '/projects/template_landing_page.png',
+        alt: 'Template Landing Page',
+        title: 'Template',
+        description: 'Modelo de página para captação de leads, promover produtos ou serviços, ou gerar vendas. Contrate este serviço comigo para por uma página no ar rapidamente.',
+        repo: 'https://github.com/Eder-TS/template_landing_page'
+    },
+    {
+        id: 1,
         site: 'https://edertsdncweather.netlify.app/',
         src: '/projects/weather.png',
         alt: 'Projeto DNC Weather',
@@ -9,8 +18,8 @@ const projects = [
         repo: 'https://github.com/Eder-TS/Desafio2_DncWeather'
     },
     {
-        id:1,
-        site:'https://desafioccxp22.netlify.app/',
+        id: 2,
+        site: 'https://desafioccxp22.netlify.app/',
         src: '/projects/ccxp.png',
         alt: 'CCXP22',
         title: 'Timer para evento',
@@ -18,7 +27,7 @@ const projects = [
         repo: 'https://github.com/Eder-TS/Desafio-CCXP22'
     },
     {
-        id:2,
+        id: 3,
         site: 'https://recrutadoramicheli.netlify.app/',
         src: '/projects/portfoliomi.png',
         alt: 'Portfólio recrutadora',
@@ -27,7 +36,7 @@ const projects = [
         repo: 'https://github.com/Eder-TS/Portfolio-Mi'
     },
     {
-        id:3,
+        id: 4,
         site: 'https://inscricaobootcampdnc.netlify.app',
         src: '/projects/bootcamp.png',
         alt: 'Bootcamp DNC',
@@ -36,7 +45,7 @@ const projects = [
         repo: 'https://github.com/Eder-TS/Bootcamp-DNC'
     },
     {
-        id:4,
+        id: 5,
         site: 'https://dapper-pothos-7da56a.netlify.app/',
         src: '/projects/landpage.png',
         alt: 'Landing page DNC',
@@ -45,7 +54,7 @@ const projects = [
         repo: 'https://github.com/Eder-TS/PROJETO-LANDINGPAGE'
     },
     {
-        id:5,
+        id: 6,
         site: 'https://minhatabuada-dnc.netlify.app/',
         src: '/projects/calc.png',
         alt: 'Calculadora',
