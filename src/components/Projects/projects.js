@@ -6,7 +6,7 @@ const projects = [
         alt: 'Template Landing Page',
         title: 'Template',
         description: 'Modelo de página para captação de leads, promover produtos ou serviços, ou gerar vendas. Contrate este serviço comigo para por uma página no ar rapidamente.',
-        repo: 'https://github.com/Eder-TS/template_landing_page'
+        repo: ''
     },
     {
         id: 1,
