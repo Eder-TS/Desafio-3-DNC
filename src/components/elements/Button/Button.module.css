@@ -14,3 +14,15 @@
     cursor: pointer;
     transform: translateY(-7px);
 }
+
+.disabled button{
+    background: grey;
+
+    color: white;
+    font-weight: 600;
+
+    padding: 20px 40px;
+    
+    border-radius: 60px;
+    border: none;
+}
