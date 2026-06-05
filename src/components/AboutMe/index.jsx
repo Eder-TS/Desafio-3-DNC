@@ -62,9 +62,34 @@ export default function AboutMe(){
 
                     <div className={styles.boxcontent}>
                         <p>
-                            No primeiro semestre
-                            finalizado os estudos 
-                            em frontend.
+                            Finalizado os estudos 
+                            em frontend e iniciado em backend.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div className={styles.event}>
+                    <div className={styles.date}>
+                        <h2>2025</h2>
+                    </div>
+
+                    <div className={styles.boxcontent}>
+                        <p>
+                            Estudos em Typescript e DevOps.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div className={styles.event}>
+                    <div className={styles.date}>
+                        <h2>2026</h2>
+                    </div>
+
+                    <div className={styles.boxcontent}>
+                        <p>
+                            Finalizado o curso e iniciada a criação de ferramentas e aplicações.
                         </p>
                     </div>
                     
